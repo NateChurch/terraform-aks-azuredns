@@ -1,0 +1,10 @@
+{
+  "key_vault": {
+    "namespace": "azure-workload-identity-system",
+    "service_account": "workload-identity-sa"
+  },
+  "cert_manager": {
+    "namespace": "cert-manager",
+    "service_account": "cert-manager"
+  }
+}

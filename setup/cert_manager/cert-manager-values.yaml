@@ -1,0 +1,15 @@
+# prometheus:
+#   enabled: false
+crds:
+  enabled: true
+
+podLabels:
+  azure.workload.identity/use: "true"
+serviceAccount:
+  labels:
+    azure.workload.identity/use: "true"
+
+# Needed to use ambient credentials for workload identity
+extraArgs:
+  - --issuer-ambient-credentials=true
+  - --cluster-issuer-ambient-credentials=true
